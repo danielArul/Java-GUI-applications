@@ -6,23 +6,33 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 
-<BorderPane fx:id="mainPanel" fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<BorderPane fx:id="mainPanel" fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" stylesheets="@style.css">
+    <!--<top>-->
+        <!--<MenuBar>-->
+            <!--<menus>-->
+                <!--<Menu id="contactsButton" text="Contacts">-->
+                    <!--<items>-->
+                        <!--<MenuItem text="Add.." onAction="#showAddContactDialog"></MenuItem>-->
+                    <!--</items>-->
+                    <!--<items>-->
+                        <!--<MenuItem text="Edit.." onAction="#showEditContactDialog"></MenuItem>-->
+                    <!--</items>-->
+                    <!--<items>-->
+                        <!--<MenuItem text="Delete.." onAction="#deleteContact"></MenuItem>-->
+                    <!--</items>-->
+                <!--</Menu>-->
+            <!--</menus>-->
+        <!--</MenuBar>-->
+    <!--</top>-->
+
     <top>
-        <MenuBar>
-            <menus>
-                <Menu text="Contacts">
-                    <items>
-                        <MenuItem text="Add.." onAction="#showAddContactDialog"></MenuItem>
-                    </items>
-                    <items>
-                        <MenuItem text="Edit.." onAction="#showEditContactDialog"></MenuItem>
-                    </items>
-                    <items>
-                        <MenuItem text="Delete.." onAction="#deleteContact"></MenuItem>
-                    </items>
-                </Menu>
-            </menus>
-        </MenuBar>
+        <HBox spacing="20" alignment="CENTER">
+            <Button id="addButton" text="Add Contact" onAction="#showAddContactDialog"/>
+            <Button id="editButton" text="Edit Contact" onAction="#showEditContactDialog"/>
+            <Button id="deleteButton" text="Delete Contact" onAction="#deleteContact"/>
+        </HBox>
     </top>
 
     <center>

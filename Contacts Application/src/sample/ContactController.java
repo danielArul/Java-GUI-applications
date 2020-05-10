@@ -1,6 +1,7 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import sample.datamodel.Contact;
 import javafx.scene.control.TextField;
 
@@ -19,10 +20,27 @@ public class ContactController {
     private TextField notesField;
 
     public Contact getNewContact(){
-        String firstName=firstNameField.getText();
-        String lastName=lastNameField.getText();
-        String phoneNumber=phoneNumberField.getText();
-        String notes=notesField.getText();
+        String firstName=firstNameField.getText().trim();
+        String lastName=lastNameField.getText().trim();
+        String phoneNumber=phoneNumberField.getText().trim();
+        String notes=notesField.getText().trim();
+
+        if(firstName.isEmpty()){
+            firstName="NOT SPECIFIED";
+
+        }
+        if(lastName.isEmpty()){
+            lastName="NOT SPECIFIED";
+
+        }
+        if(phoneNumber.isEmpty()){
+            phoneNumber="NOT SPECIFIED";
+
+        }
+        if(notes.isEmpty()){
+            notes="NOT SPECIFIED";
+
+        }
 
         Contact newContact=new Contact(firstName,lastName,phoneNumber,notes);
         return newContact;

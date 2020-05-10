@@ -1,0 +1,20 @@
+#addButton{
+    -fx-text-fill:"white";
+    -fx-font: 18px "Serif";
+    -fx-padding: 10;
+    -fx-background-color: #04D500   ;
+}
+
+#editButton{
+    -fx-text-fill:"white";
+    -fx-font: 18px "Serif";
+    -fx-padding: 10;
+    -fx-background-color: #0195FF ;
+}
+
+#deleteButton{
+    -fx-text-fill:"white";
+    -fx-font: 18px "Serif";
+    -fx-padding: 10;
+    -fx-background-color: #FF0101  ;
+}

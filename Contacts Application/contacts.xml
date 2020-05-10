@@ -1,9 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contacts>
-<contact>
-	<first_name>Bob</first_name>
-	<last_name>Hunter</last_name>
-	<phone_number>231</phone_number>
-	<notes>Some notes</notes>
-</contact>
 </contacts>
