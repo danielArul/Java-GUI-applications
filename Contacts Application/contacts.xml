@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contacts>
+<contact>
+	<first_name>Evangeline</first_name>
+	<last_name>George</last_name>
+	<phone_number>023234</phone_number>
+	<notes>Sister</notes>
+</contact>
 </contacts>
